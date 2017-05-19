@@ -11,6 +11,12 @@ $outmarcas = curl_exec($chmarcas);
 curl_close($chmarcas);
 $outmarcas2 = json_decode($outmarcas, true);
 print_r($outmarcas2);
+echo '<hr>';
+foreach ($outmarcas2 as $out) {
+    foreach ($out as $ou) {
+        print_r($ou);
+    }
+}
 ?>
 
 
