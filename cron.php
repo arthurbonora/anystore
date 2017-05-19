@@ -10,7 +10,7 @@ curl_setopt($chmarcas, CURLOPT_RETURNTRANSFER, true);
 $outmarcas = curl_exec($chmarcas);
 curl_close($chmarcas);
 $outmarcas2 = json_decode($outmarcas, true);
-var_dump($outmarcas2);
+print_r($outmarcas2);
 ?>
 
 
